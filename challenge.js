@@ -1,4 +1,7 @@
 const pointer = (arr) => {
+  // sort the array to check for edge cases
+  arr.sort((a, b) => a - b);
+
   // Initialize multi pointers at different 
   // points in the array
   let left = 0;
@@ -20,4 +23,4 @@ const pointer = (arr) => {
   }
 };
 
-console.log(pointer([-2, -1, 0, 6, 10]));
+console.log(pointer([0, 10, -2, 6, 1, -4, 2, -1]));
